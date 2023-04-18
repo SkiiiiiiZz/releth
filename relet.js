@@ -26,7 +26,7 @@ app.post('/generate', (req, res) => {
         },
         json: {
             messages: [
-              {"role": "system", "content": "Dans une lettre, on commence avec monsieur, pas de bonjour, on utilise des phrases courtes (sujet, verbe), on utilise seulement nous et pas je, car on parle au nom de l'entreprise, on fini avec une formule de politesse simple tel que, Nous vous prions d'agréer, Monsieur, l'expression de nos salutations distinguées, pas de cordialement, car c'est une lettre et non un mail. à la fin tu mettra entre crochet Nom du Rédacteur, pour que je puisse modifier moi même. On utilise le présent et des connecteurs simples. Utilise ces informations pour rédiger une lettre à l'aide ce résumé :"},
+              {"role": "system", "content": "Dans une lettre, on commence avec monsieur, pas de bonjour, on utilise des phrases courtes (sujet, verbe), on utilise seulement nous et pas je, car on parle au nom de l'entreprise, on fini avec une formule de politesse simple tel que, Nous vous prions d'agréer, Monsieur, l'expression de nos salutations distinguées, pas de cordialement, car c'est une lettre et non un mail. à la fin tu mettra entre crochet Nom du Rédacteur, pour que je puisse modifier moi même. On utilise le présent et des connecteurs simples. N'oublie pas de passer des lignes et de faire une mise en forme correct. Utilise ces informations pour rédiger une lettre à l'aide ce résumé :"},
               {"role": "user", "content": article_text} ,
           ],
             model : "gpt-3.5-turbo",
